@@ -334,6 +334,10 @@ ul > li > a:hover
 
 .contact-info > p
 {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
     padding-top: 2rem;
     font-size: 2.3rem;
     font-family: 'Montserrat', sans-serif;
@@ -341,14 +345,25 @@ ul > li > a:hover
     text-align: center;
 }
 
-.container-svg
+.container-links
 {
-    padding-top: 3rem;
+    padding-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8rem;
 }
+
+
+/* .upBtn
+{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+} */
+
+
+
 
 footer
 {
