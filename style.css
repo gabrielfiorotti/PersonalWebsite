@@ -316,9 +316,50 @@ ul > li > a:hover
 }
 
 
+
 .card-btn:hover
 {
     opacity: 80%;
+}
+
+
+
+
+/* ============card-show-================ */
+
+.cardsContent
+{   
+    z-index: 1;
+    background-color: white;
+    width: 1000px;
+    height: 750px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    font-size: 2rem;
+    box-shadow: rgba(255, 255, 255, 0.733) 20px 13px 27px -20px, rgb(255, 255, 255) 1px 8px 16px -6px;
+    padding: 2rem 14rem;
+}
+
+.cardsContent > img 
+{
+    width: 750px;
+}
+
+.cardsContent > p
+{
+    padding-top: 2rem;
+}
+
+.cardsContent > p > a
+{
+    font-weight: 600;
+    color: rgb(12, 62, 201);
+}
+
+.cardsContent > p > a:hover
+{
+    opacity: 80%;
+    border-bottom: 1px solid;
 }
 
 
