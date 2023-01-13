@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <script defer src="./script.js"></script>
     <title>Gabriel Fiorotti | Frontend Developer</title>
 </head>
 
@@ -80,47 +81,61 @@
         </section>
 
         <section id="projects" class="container-projects">
+            <div class="shadow"></div>
             <h2 class="title">Projects</h2>
             <hr>
             <div class="container-cards">
 
-                <div id="card-DC" class="card">
+                <div id="cardDC" class="card">
                     <img class="card-img" src="./assets/thumbDoctor.svg" alt="">                    
                     <div class="card-info">
                         <p class="card-title">DoctorCare</p>
-                        <!-- <button class="card-btn">Show more</button> -->
                     </div>                    
                 </div> 
 
-                <div class="cardsContent">
-                    <h2>DoctorCare</h2>
-                    <img src="./assets/Preview-DoctorCare.png" alt="doctorcare">
-                    <p>
-                        Project from <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a> during the Next Level Week event.
-                        <br>
-                        <br>
-                        DoctorCare have an One Page format, intended to small and medium business related to health services.
-                        <br>
-                        Responsive design: a website that displays nicely on desktop, phone and tablet.
-                        <br>
-                        <br>
-                        You can check the <a href="https://gabrielfiorotti.github.io/DoctorCare/" target="_blank">result</a> or view the code in <a href="https://github.com/gabrielfiorotti/DoctorCare" target="_blank">Github</a>.
-                    </p>        
-                </div>
+                    <div  class="cardShow cardShowDC">
+                        <h2>DoctorCare</h2>
+                        <img src="./assets/Preview-DoctorCare.png" alt="doctorcare">
+                        <p>
+                            Project from <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a> during the Next Level Week event.
+                            <br>
+                            <br>
+                            DoctorCare have an One Page format, intended to small and medium business related to health services.
+                            <br>
+                            Responsive design: a website that displays nicely on desktop, phone and tablet.
+                            <br>
+                            <br>
+                            You can check the <a href="https://gabrielfiorotti.github.io/DoctorCare/" target="_blank">result</a> or view the code in <a href="https://github.com/gabrielfiorotti/DoctorCare" target="_blank">Github</a>.
+                        </p>       
+                        <button class="closeDC"><strong>X</strong> Close</button> 
+                    </div>
 
-                <div id="card-MCC" class="card">
+                <div id="cardMCC" class="card">
                     <img class="card-img" src="./assets/thumbMCC.svg" alt="">
                     <div class="card-info">
-                        <p class="card-title">Marcacafé</p>
-                        <!-- <button class="card-btn">Show more</button> -->
+                        <p class="card-title">Marca Café</p>
                     </div>                    
                 </div> 
+
+                    <div  class="cardShow cardShowMCC">
+                        <h2>Marca Café</h2>
+                        <img src="./assets/Preview-MCC.png" alt="doctorcare">
+                        <p>
+                            Freelance required by a brazilian exportation coffee company, located in Espírito Santo (one of the southeast states in Brazil).
+                            <br>                        
+                            <br>
+                            Thought through the entire design structure of the project, analyzing the company's style and its logo colors, then I developed the whole page.
+                            <br>
+                            <br>
+                            You can check the <a href="https://www.marcacafe.com.br/" target="_blank">result</a> or view the code in <a href="https://github.com/gabrielfiorotti/DoctorCare" target="_blank">Github</a>.
+                        </p>       
+                        <button class="closeMCC"><strong>X</strong> Close</button> 
+                    </div>
 
                 <div id = "card-NFX" class="card">
                     <img class="card-img" src="./assets/thumbNFX.svg" alt="">
                     <div class="card-info">
                         <p class="card-title">Netflix Landing Page</p>
-                        <!-- <button class="card-btn">Show more</button> -->
                     </div>                    
                 </div> 
 
@@ -128,10 +143,11 @@
                     <img class="card-img" src="./assets/thumbFR.svg" alt="">
                     <div class="card-info">
                         <p class="card-title">Fate Revealer</p>
-                        <!-- <button class="card-btn">Show more</button> -->
                     </div>                    
                 </div> 
             </div>  
+
+            
                              
         </section>
 

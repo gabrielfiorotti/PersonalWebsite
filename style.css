@@ -232,10 +232,29 @@ ul > li > a:hover
 
 /* =========== PROJECTS ================ */
 
+#projects 
+{
+    /* with position relative, you can manipulate position absolute (.shadow) inside the section you choose */
+    position: relative;
+}
+
 #projects > hr
 {
     /* width: 111rem; */
     margin-bottom: 40px;
+}
+
+.shadow{
+    display: none;
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0, 0.6);
+    box-shadow: inset 5px 30px 300px #000, inset -5px -30px 300px #000;
 }
 
 .container-projects
@@ -327,11 +346,17 @@ ul > li > a:hover
 
 /* ============card-show-================ */
 
-.cardsContent
+.cardShow
 {   
-    z-index: 1;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
     background-color: white;
-    width: 1000px;
+    width: 900px;
     height: 750px;
     font-family: 'Montserrat', sans-serif;
     border-radius: 10px;
@@ -340,28 +365,48 @@ ul > li > a:hover
     padding: 2rem 14rem;
 }
 
-.cardsContent > img 
+.cardShow > img 
 {
-    width: 750px;
+    width: 650px;
 }
 
-.cardsContent > p
+.cardShow > p
 {
     padding-top: 2rem;
+    padding-bottom: 2.5rem;
 }
 
-.cardsContent > p > a
+.cardShow > p > a
 {
-    font-weight: 600;
-    color: rgb(12, 62, 201);
+    font-weight: 700;
+    color: black
 }
 
-.cardsContent > p > a:hover
+.cardShow > p > a:hover
 {
     opacity: 80%;
     border-bottom: 1px solid;
 }
 
+.cardShow > button
+{
+    background-color:black;
+    color: white;
+    height: 4rem;
+    width: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    border: 1.5px solid black;
+    border-radius: 8px;
+}
+
+.cardShow > button:hover
+{
+    opacity: 85%;
+    cursor: pointer;
+}
 
 
 /* ============= CONTACT ================ */
