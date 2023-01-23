@@ -56,7 +56,7 @@ a {
     align-items: center;
     height: 100vh;
     background-color: black;
-    gap: 35%;
+    gap: 32%;
 }
 
 /* ======== header =========*/
@@ -270,10 +270,9 @@ ul > li > a:hover
 {
     background-color: black;
     /* padding-top: 4.5%; */
-    height: 100vh;
-    padding: 0 20%;
-    /* padding: 0 370px; */
-    /* max-width: 1110px; */
+    height: fit-content;
+    padding-inline:20%;
+    padding-bottom: 3%;
 }
 
 #projects > h2
@@ -306,24 +305,11 @@ ul > li > a:hover
 
 .card:hover
 {
-
     cursor: pointer;
-
     transform: scale(1.025,1.025);
-
-    /* box-shadow: rgba(255, 255, 255, 0.726) 0px 10px 20px, rgba(255, 255, 255, 0.849) 0px 6px 6px; */
-
-    /* box-shadow: rgba(253, 252, 252, 0.774) 0px 3px 6px, rgba(238, 229, 229, 0.616) 0px 3px 6px; */
-
-    /* box-shadow: rgba(255, 255, 255, 0.733) 20px 13px 27px -20px, rgb(255, 255, 255) 1px 8px 16px -6px; */
 }
 
-/* .card-img
-{
-    remove
-    width: 350px;
-    height: 230px;
-} */
+
 
 .card-info
 {
@@ -452,15 +438,6 @@ ul > li > a:hover
 }
 
 
-/* .upBtn
-{
-    padding-top: 4rem;
-    display: flex;
-    justify-content: center;
-} */
-
-
-
 
 footer
 {
@@ -525,7 +502,7 @@ footer
 
     .paragraph
     {
-        padding: 2.5% 5%;
+        padding: 2.5% 3%;
         font-size: 1.5rem;
     }
 
@@ -534,7 +511,7 @@ footer
     {
         padding: 3% 0;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;     
-        gap: 6;
+        gap: 5rem;
     }
 
     .icons
@@ -575,12 +552,12 @@ footer
 
     .card
     {
-        width: 350px;
+        width: 290px;
     }
 
     .card-title
     {
-        font-size: 2.2rem;
+        font-size: 1.95rem;
     }
 
 
@@ -653,8 +630,8 @@ footer
 }
 
 
-/* dev tools = 455 x 650 */
-    
+/* dev tools iphone11= 418 x 700 */
+   
 @media (max-width: 480px)
 {
     
@@ -662,10 +639,7 @@ footer
     {
         font-size: 2.5rem;
     }
-    /* #home
-    {
-        gap: 26%;
-    } */
+    
 
 
     ul
@@ -695,6 +669,7 @@ footer
     .paragraph
     {
         font-size: 1.8rem;
+        padding: 3.5% 2%;
     }
 
     .container-timeline
@@ -796,7 +771,7 @@ footer
 
     .container-contact
     {
-        height: 37vh;
+        height: 33vh;
     }
 
     .contact-info > p
@@ -817,8 +792,8 @@ footer
     
     footer
     {
-        padding-top: 2.2rem;
-        height: 10vh;
+        font-size: 1.4rem;
+        height: 9vh;
     }
    
 }
