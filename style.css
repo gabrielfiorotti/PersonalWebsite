@@ -271,7 +271,9 @@ ul > li > a:hover
 
 .container-projects
 {
+    
     background-color: black;
+    margin: auto;
     /* padding-top: 4.5%; */
     height: 100vh;
     padding-inline:20%;
@@ -501,7 +503,7 @@ footer
 
     #home
     {
-        gap: 27%;
+        gap: 30%;
     }
 
     .home-content > h1
@@ -532,7 +534,7 @@ footer
     .paragraph
     {
         padding: 2.5% 3%;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
 
@@ -550,16 +552,28 @@ footer
 
     .icon-data
     {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .icon-info
     {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .p-bellow
+    {
+        padding-top: 4rem;
     }
 
 
     /* projects */
+
+    .container-projects
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     #projects
     {
@@ -575,8 +589,10 @@ footer
     .container-cards
     {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px 25px;
-        margin: 0 5rem;
+        gap: 30px 40px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .card
@@ -689,8 +705,9 @@ footer
     .container-cards
     {
         grid-template-columns: repeat(2, 1fr);
-        gap: 25px 25px;
-        margin: 0 5rem;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .card
