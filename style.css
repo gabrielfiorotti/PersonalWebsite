@@ -182,6 +182,9 @@ ul > li > a:hover
 .container-about
 {
     /* padding-top: 2%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
     margin: 0 20%;
 }
@@ -270,7 +273,7 @@ ul > li > a:hover
 {
     background-color: black;
     /* padding-top: 4.5%; */
-    height: fit-content;
+    height: 100vh;
     padding-inline:20%;
     padding-bottom: 3%;
 }
@@ -413,6 +416,9 @@ ul > li > a:hover
 {
     height: 40vh;
     margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-info > p
@@ -452,6 +458,28 @@ footer
     background-color: var(--color1);
 }
 
+
+#backToTopButton {
+    position: fixed;
+    bottom: 2rem;
+    right: 2.5rem;
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(100%);
+
+    /* push to outside of the page to create an animation when it comes up */
+    transition: 260ms;
+}
+
+
+#backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+    /* back to normal position */
+}
 
 
 

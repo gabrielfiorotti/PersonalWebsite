@@ -1,4 +1,27 @@
 
+// back to top button show on screen
+
+window.addEventListener('scroll', onScroll)
+
+
+function onScroll() {
+    showBackToTopButtonOnScroll()
+}
+
+
+function showBackToTopButtonOnScroll() {
+    const backToTopButton = window.document.getElementById('backToTopButton')
+
+    if (scrollY > 400) {
+        backToTopButton.classList.add('show')
+    } else {
+        backToTopButton.classList.remove('show')
+    }
+}
+
+
+
+
 // hide & show function to each project
 
 
