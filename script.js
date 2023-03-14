@@ -29,6 +29,29 @@ function showBackToTopButtonOnScroll() {
 let shadow = window.document.querySelector('.shadow');
 
 
+// ================= Clothes Ecommerce ====================//
+
+
+let cardClothes = window.document.querySelector('#cardClothes');
+
+let cardShowClothes = window.document.querySelector('.cardShowClothes');
+
+let closeClothes = window.document.querySelector('.closeClothes');
+
+
+cardClothes.addEventListener('click', () => {
+        cardShowClothes.style.display = 'block';
+        shadow.style.display = 'block';
+})
+
+closeClothes.addEventListener('click', () => {
+    cardShowClothes.style.display = 'none';
+    shadow.style.display = 'none';
+})
+
+
+
+
 
 // ================= DoctorCare ====================//
 

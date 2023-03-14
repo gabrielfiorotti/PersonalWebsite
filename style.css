@@ -410,6 +410,10 @@ ul > li > a:hover
     cursor: pointer;
 }
 
+.video_clothes
+{
+    margin-top: 1.2rem;
+}
 
 /* ============= CONTACT ================ */
 
@@ -639,9 +643,14 @@ footer
 
     /* --- positioning each cardShow manually to stay exact where I want -------- */
 
+    .cardShowClothes
+    {
+        transform: translate(0%, -40%);
+    }
+
     .cardShowDC
     {
-        transform: translate(0%, -25%);
+        transform: translate(0%, -40%);
     }
     
     .cardShowMCC
@@ -720,6 +729,8 @@ footer
         font-size: 1.95rem;
     }
 }
+
+
 
 @media (max-width: 640px)
 {
@@ -883,8 +894,19 @@ footer
         height: 2.5rem;
     }
 
+    .video_clothes
+    {
+        width: 250px;
+        height: 290px;
+    }
+
 
     /* --- positioning each cardShow manually to stay exact where I want -------- */
+
+    .cardShowClothes
+    {
+        transform: translate(0%, -73%);
+    }
 
     .cardShowDC
     {
