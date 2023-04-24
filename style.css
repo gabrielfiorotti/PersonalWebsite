@@ -415,6 +415,7 @@ ul > li > a:hover
 .video_clothes
 {
     margin-top: 1.2rem;
+    width: 100%;
 }
 
 /* ============= CONTACT ================ */
@@ -494,7 +495,6 @@ footer
 
 
 /* ============= RESPONSIVENESS ================= */
-
 
 
 
@@ -690,7 +690,7 @@ footer
 {
     #home
     {
-        gap: 27%;
+        gap: 25%;
     }
 
     .container-about
@@ -732,6 +732,21 @@ footer
     }
 }
 
+
+@media (max-width: 1055px) and (max-height: 800px)
+{
+    /* projects */
+    .container-cards
+    {
+        width: 200px;
+    }
+
+    .cardShowClothes
+    {
+        transform: translate(0%, -20%);
+    }
+
+}
 
 
 @media (max-width: 640px)
